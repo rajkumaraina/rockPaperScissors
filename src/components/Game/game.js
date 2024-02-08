@@ -87,7 +87,7 @@ class Game extends Component {
   clicked = id => {
     const {score} = this.state
     const selectedItem = choicesList.find(each => each.id === id)
-    const r = Math.ceil(Math.random() * choicesList.length - 1)
+    const r = Math.floor(Math.random() * choicesList.length)
     console.log(r)
     const randomItem = choicesList[r]
     console.log(selectedItem.id)
